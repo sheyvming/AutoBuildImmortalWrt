@@ -51,11 +51,11 @@ PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-theme-argon"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
+# PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 #24.10.0
-PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
-PACKAGES="$PACKAGES openssh-sftp-server"
+# PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
+# PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
+# PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
 # 文件管理器
@@ -68,7 +68,7 @@ PACKAGES="$PACKAGES luci-app-openclash"
 if [ "$PROFILE" = "glinet_gl-axt1800" ] || [ "$PROFILE" = "glinet_gl-ax1800" ]; then
     # 这2款 暂时不支持第三方插件的集成 snapshot版本太高 opkg换成apk包管理器 6.12内核 
     echo "Model:$PROFILE not support third-parted packages"
-    PACKAGES="$PACKAGES -luci-i18n-diskman-zh-cn luci-i18n-homeproxy-zh-cn"
+    # PACKAGES="$PACKAGES -luci-i18n-diskman-zh-cn luci-i18n-homeproxy-zh-cn"
 else
     echo "Other Model:$PROFILE"
     PACKAGES="$PACKAGES $CUSTOM_PACKAGES"
